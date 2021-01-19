@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Penyewaan Alat Camping</title>
+  </head>
+  <body style="background-image: url(https://images.all-free-download.com/images/graphicthumb/mountain_range_background_312045.jpg);" onload="onLoad()">
+    <center>
+   <script src="sewa tenda.js"></script>
+    <center>
+    <h1>Aplikasi Penyewaan alat camping</h1>
+    </center>
+    <center>
+        <h3>Data Penyewa</h3><br/>
+        <Label>Nama: <input type="text" id="namaInput"/></Label><br/>
+        <Label>No HP: <input type="text" id="nohpInput"/></Label><br/>
+        <input type="button" onclick="pesanAlat()" value="Pesan" class="btn btn-primary"></input>
+        </center>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="images/TENDA_SINGLE_LAYER_WATERPROOF.jpg" style="width:150px;height:150px;"/><br/>
+          <h4>Tenda single layer</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahtendasingle" value="0" min="0" max="35000"/></label><br/>
+          <label>Stok: <input type="number" id="stoktendasingle" readonly/></label><br/>
+          <label>Harga:</label><label id="hargasewatendasingle"></label><br/>
+          <Label>Total: <input type="text" id="hargasewatenda_single" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/3bdd6a05429562eeeaed9e207740688f.jpg" style="width:150px;height:150px;"/><br/>
+          <h4>Tenda Double Layer</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahtendadouble" value="0" min="0" max="45000"/></label><br/>
+          <label>Stok: <input type="number" id="stoktendadouble" readonly/></label><br/>
+          <label>Harga:</label><label id="hargasewatendadouble"></label><br/>
+          <Label>Total: <input type="text" id="hargasewatenda_double" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/senter-jumbo-led.jpg" style="width:150px;height:150px;"/><br/>
+          <h4>Senter</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahsenter" value="0" min="0" max="10000"/></label><br/>
+          <label>Stok: <input type="number" id="stoksenter" readonly/></label><br/>
+          <label>Harga:</label><label id="hargasewasenter"></label><br/>
+          <Label>Total: <input type="text" id="hargasewa_senter" readonly/></Label>
+        </div>
+      </div>
+    </div><br/>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="images/pro-gas_pro-gas-pg11966-kompor-portable-1-tungku_full05.jpg" style="width:150px;height:150px;"/><br/>
+          <h4>Kompor</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahkompor" value="0" min="0" max="10000"/></label><br/>
+          <label>Stok: <input type="number" id="stokkompor" readonly/></label><br/>
+          <label>Harga:</label><label id="hargasewakompor"></label><br/>
+          <Label>Total: <input type="text" id="hargasewa_kompor" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/2df18020944238291486e4d824cd8144.jpg" style="width:150px;height:150px;"/><br/>
+          <h4>Sleeping Bag</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahsleepingbag" value="0" min="0" max="15000"/></label><br/>
+          <label>Stok: <input type="number" id="stoksleepingbag" readonly/></label><br/>
+          <label>Harga:</label><label id="hargasewasleepingbag"></label><br/>
+          <Label>Total: <input type="text" id="hargasewa_sleepingbag" readonly/></Label>
+        </div>
+        <div class="col-sm">
+          <img src="images/10068819_1.jpg" style="width:150px;height:150px;"/><br/>
+          <h4>Gas</h4><br/>
+          <label>Jumlah: <input type="number" id="jumlahgas" value="0" min="0" max="5000"/></label><br/>
+          <label>Stok: <input type="number" id="stokgas" readonly/></label><br/>
+          <label>Harga:</label><label id="hargasewagas"></label><br/>
+          <Label>Total: <input type="text" id="hargasewa_gas" readonly/></Label>
+        </div>
+      </div>
+    </div><br/>
+    <div class="container">
+   
+    <br>
+    <label><b>Nama: </b></label><label id="namaOutput"></label><br>
+    <label><b>No HP: </b></label><label id="nohpOutput"></label><br>
+    <table class="table">
+      <thead class="thead-dark">
+      </thead>
+      <tbody id="tabelHasil"></tbody>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <label>Total: <input type="number" id="totalSemua"/></label><br>
+    <label>Bayar: <input type="number" id="bayar"/></label><button onclick="hitungTotal()">Bayar</button><br>
+    <label>Kembalian: <input type="number" id="kembalian"/></label><br/>
+</center>
+  </body>
+</html>
